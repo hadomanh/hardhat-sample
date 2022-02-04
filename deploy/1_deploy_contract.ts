@@ -3,10 +3,10 @@ module.exports = async ({ ethers, deployments, hardhatArguments } : any) => {
     const { deploy } = deployments;
     const [ owner ] = await ethers.getSigners();
 
-    await deploy('Greeter', {
+    await deploy('WBNB', {
         from: owner.address,
         log: true,
-        args: ["Hello, Hardhat!"]
+        args: []
     });
 
 };
